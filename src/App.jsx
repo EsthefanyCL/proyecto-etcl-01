@@ -1,15 +1,16 @@
 import "./App.css";
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
-import Home from "./pages/Home";
-import Login from "./components/Login";
+import ProductsPage from "./pages/Products";
 import Welcome from "./pages/Welcome";
+import AccesServices from "./pages/AccesServices";
+import PaymentPage from "./pages/PaymentPage";
 
 import PropTypes from "prop-types";
 import Header from "./components/Header";
 
 const ProtectedRoute = ({ children }) => {
   const isAuthenticated = localStorage.getItem("isAuthenticated");
-  return isAuthenticated === "true" ? children : <Navigate to="/notfound" />;
+  return isAuthenticated === "true" ? children : <Navigate to="/welcome" />;
 };
 
 function App() {
@@ -17,13 +18,23 @@ function App() {
     <BrowserRouter>
       <Header />
       <Routes>
-        <Route path="/login" element={<Login />} />
-        <Route path="/notfound" element={<Welcome />} />
+        <Route path="/login" element={<AccesServices />} />
+        <Route 
+          path="/welcome" 
+          element={<Welcome />} />
         <Route
-          path="/"
+          path="/products"
           element={
             <ProtectedRoute>
-              <Home />
+              <ProductsPage />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/sale"
+          element={
+            <ProtectedRoute>
+              <PaymentPage />
             </ProtectedRoute>
           }
         />

@@ -6,7 +6,7 @@ const Header = () => {
   const navigate = useNavigate();
   const handleLogout = () => {
     localStorage.removeItem("isAuthenticated");
-    navigate("/login");
+    navigate("/welcome");
   };
   const isAuthenticated = localStorage.getItem("isAuthenticated");
   return (
@@ -19,7 +19,7 @@ const Header = () => {
         <Buttons text="Servicios" styleType="info"></Buttons>
         <Buttons text="Contacto" styleType="info"></Buttons>
       </div>
-      {isAuthenticated && <button onClick={handleLogout}>Cerrar Sesion</button>}
+      {isAuthenticated && <Buttons text="Cerrar Sesion" styleType="primary" onClick={handleLogout}></Buttons>}
     </header>
   );
 };

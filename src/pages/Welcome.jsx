@@ -11,7 +11,7 @@ const Welcome = () => {
         <h1> Bienvenido a </h1>
         <h3 className="text-[30px] mb-10 text-white" >Florecer</h3>
         <button type="button" onClick={() => navigate("/login")}>
-          Ir al login
+          Ir a comprar
         </button>
       </div>
     </div>
