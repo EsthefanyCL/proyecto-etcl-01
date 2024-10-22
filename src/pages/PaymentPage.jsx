@@ -19,6 +19,11 @@ const PaymentPage = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (paymentInfo.name =="Esthefany" && paymentInfo.cvv == "123"){
+      alert("Pago exitoso");
+    }else{
+      alert("Datos incorrectos");
+    }
   };
 
   return (
@@ -31,7 +36,7 @@ const PaymentPage = () => {
           name="name"
           value={paymentInfo.name}
           onChange={handleChange}
-          className="border rounded w-full p-2"
+          className="border rounded w-full p-2 bg-white"
           required
         />
       </div>
@@ -42,7 +47,7 @@ const PaymentPage = () => {
           name="address"
           value={paymentInfo.address}
           onChange={handleChange}
-          className="border rounded w-full p-2"
+          className="border rounded w-full p-2 bg-white"
           required
         />
       </div>
@@ -53,7 +58,7 @@ const PaymentPage = () => {
           name="cardNumber"
           value={paymentInfo.cardNumber}
           onChange={handleChange}
-          className="border rounded w-full p-2"
+          className="border rounded w-full p-2 bg-white"
           required
         />
       </div>
@@ -64,7 +69,7 @@ const PaymentPage = () => {
           name="expiry"
           value={paymentInfo.expiry}
           onChange={handleChange}
-          className="border rounded w-full p-2"
+          className="border rounded w-full p-2 bg-white"
           placeholder="MM/AA"
           required
         />
@@ -76,7 +81,7 @@ const PaymentPage = () => {
           name="cvv"
           value={paymentInfo.cvv}
           onChange={handleChange}
-          className="border rounded w-full p-2"
+          className="border rounded w-full p-2 bg-white"
           required
         />
       </div>

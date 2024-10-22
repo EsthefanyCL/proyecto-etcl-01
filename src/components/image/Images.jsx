@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
 
-const Image = ({ direcionImg, description }) => {
+const Image = ({ direcionImg, description="No tiene descripción"}) => {
   return (
     <div>
-        <img src={direcionImg} alt= {description} className="w-full h-full object-cover" />
+        <img src={direcionImg} alt={description} className="w-full h-full object-cover" />
     </div>
   )
 }

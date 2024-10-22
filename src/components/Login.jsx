@@ -7,11 +7,11 @@ const Login = () => {
   const navigate = useNavigate();
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (name === "admin" && password === "admin") {
+    if (name === "Esthefany" && password === "1234") {
       navigate("/products");
       localStorage.setItem("isAuthenticated", "true");
     } else {
-      alert("Campos incorrectos");
+      alert("Datos incorrectos");
     }
   };
   return (
@@ -24,7 +24,7 @@ const Login = () => {
             type="text"
             value={name}
             onChange={(e) => setName(e.target.value)}
-            className="px-3"
+            className="px-3  bg-white"
           />
         </label>
         <br />
@@ -34,7 +34,7 @@ const Login = () => {
             type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            className="px-3"
+            className="px-3 bg-white"
           />
         </label>
         <br />

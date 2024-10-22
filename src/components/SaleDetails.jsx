@@ -5,7 +5,7 @@ const Checkout = ({ cart }) => {
   const navigate = useNavigate();
 
   const handlePayment = () => {
-    navigate('/sale', { state: { cart } }); // Pasa el carrito a pago
+    navigate('/payment', { state: { cart } }); // Pasa el carrito a pago
   };
 
   return (
@@ -32,7 +32,7 @@ const Checkout = ({ cart }) => {
         className="bg-blue-500 text-white font-bold py-2 px-4 rounded"
         onClick={handlePayment}
       >
-        Ir a Datos de Pago
+        Ir a datos de pago
       </button>
     </div>
   );
@@ -40,7 +40,6 @@ const Checkout = ({ cart }) => {
 
 Checkout.propTypes = {
   cart: PropTypes.array.isRequired,
-  onClearCart: PropTypes.func.isRequired,
 };
 
 export default Checkout;

@@ -3,9 +3,8 @@ Desarrollo de una pagina web para tienda Florecer
 
 
 ## Descripción del proyecto 📋
-Este proyecto consiste en la creación de una página web, el cual permitira realizar compras en lpinea desde cualqueir lugar, de una manera más rapida y segura.
-ue permite a los usuarios realizar compras en línea de manera rápida y segura. El objetivo principal es mejorar la experiencia del comprador, reduciendo fricciones en el proceso de compra y ofreciendo una interfaz intuitiva.
-Usando API de https://fakestoreapi.com/products, que me ayuda a optener prouyctos con sus caracteristicas.
+Este proyecto consiste en la creación de una página web, el cual permite realizar compras en línea desde cualquier lugar, de una manera más rápida y segura.
+El objetivo principal es mejorar la experiencia del comprador, reduciendo fricciones en el proceso de compra y ofreciendo una interfaz intuitiva. Usando API de https://fakestoreapi.com/products, que me ayuda a obtener productos con sus características.
 
 ## 📚 Funcionalidades 
 Proceso de compra rápido y simplificado: Menos pasos desde la selección de productos hasta el pago.

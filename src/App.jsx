@@ -18,7 +18,12 @@ function App() {
     <BrowserRouter>
       <Header />
       <Routes>
-        <Route path="/login" element={<AccesServices />} />
+        <Route 
+          path="/" 
+          element={<Navigate to="/welcome" />} />
+        <Route
+          path="/login" 
+          element={<AccesServices />} />
         <Route 
           path="/welcome" 
           element={<Welcome />} />
@@ -31,7 +36,7 @@ function App() {
           }
         />
         <Route
-          path="/sale"
+          path="/payment"
           element={
             <ProtectedRoute>
               <PaymentPage />
