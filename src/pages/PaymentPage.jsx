@@ -1,7 +1,6 @@
 import { useState } from 'react';
-import PropTypes from 'prop-types';
 
-const PaymentPage = ({ onConfirm }) => {
+const PaymentPage = () => {
   const [paymentInfo, setPaymentInfo] = useState({
     name: '',
     address: '',
@@ -20,9 +19,6 @@ const PaymentPage = ({ onConfirm }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Aquí puedes enviar la información de pago a tu API
-    // Por ejemplo, con fetch o axios
-    onConfirm(); // Llama a la función de confirmación
   };
 
   return (
@@ -92,10 +88,6 @@ const PaymentPage = ({ onConfirm }) => {
       </button>
     </form>
   );
-};
-
-PaymentPage.propTypes = {
-  onConfirm: PropTypes.func.isRequired,
 };
 
 export default PaymentPage;

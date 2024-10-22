@@ -13,10 +13,10 @@ const ProductPage = () => {
       .then(data => setProducts(data));
   }, []);
 
-  // Función para agregar productos al carrito
+  // Función: agregar productos al carrito
   const handleAddToCart = (product) => {
     setCart((prevCart) => [...prevCart, product]); // Agrega el producto al carrito
-    console.log('Producto agregado al carrito:', product); // Opcional: ver el producto en la consola
+    console.log('Producto agregado al carrito:', product);
   };
   const handleClearCart = () => {
     setCart([]);

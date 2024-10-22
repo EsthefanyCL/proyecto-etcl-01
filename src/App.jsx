@@ -3,7 +3,7 @@ import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import ProductsPage from "./pages/Products";
 import Welcome from "./pages/Welcome";
 import AccesServices from "./pages/AccesServices";
-import PaymentPage from "./pages/PaymentPage";
+import PaymentPage from "./pages/PaymentPage"
 
 import PropTypes from "prop-types";
 import Header from "./components/Header";

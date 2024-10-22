@@ -30,7 +30,7 @@ Cards.propTypes = {
       price: PropTypes.number.isRequired,
       image: PropTypes.string.isRequired,
     }).isRequired,
-    onAddToCart: PropTypes.func.isRequired, // Asegúrate que se pase la función
+    onAddToCart: PropTypes.func.isRequired,
   };
 
 export default Cards;
